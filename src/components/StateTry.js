@@ -5,7 +5,7 @@ export default class StateTry extends Component {
     return (
         <ul>
         {this.props.works.map(work => (
-          <li>{work.name}</li>
+          <li key={work.id}>{work.name}</li>
         ))}
       </ul>
     )
