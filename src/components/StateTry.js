@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class StateTry extends Component {
-  render() {
-    return (
-        <ul>
-        {this.props.works.map(work => (
-          <li key={work.id}>{work.name}</li>
-        ))}
-      </ul>
-    )
-  }
-}
+const StateTry = () => (
+  <ul>
+    {this.props.works.map((work) => (
+      <li key={work.id}>{work.name}</li>
+    ))}
+  </ul>
+);
+
+export default StateTry;
